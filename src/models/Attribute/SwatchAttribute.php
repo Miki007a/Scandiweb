@@ -1,0 +1,14 @@
+<?php
+
+namespace Scandiweb\models\Attribute;
+
+use Doctrine\ORM\Mapping as ORM;
+
+#[ORM\Entity]
+class SwatchAttribute extends Attribute
+{
+    public function __construct(string $id, string $name) {
+        parent::__construct($id, $name, 'swatch');
+    }
+
+}
